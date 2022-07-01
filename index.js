@@ -27,7 +27,6 @@ async function run(){
         app.post('/info', async(req,res)=>{
             const query =req.body;
             const result = await infoCollection.insertOne(query);
-            
             res.send(result);
         })
     }
